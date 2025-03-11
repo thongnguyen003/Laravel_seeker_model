@@ -2,4 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\TaoBang;
-Route::get('/', [TaoBang::class,'createTable']);
+use  App\Http\Controllers\PageController;
+Route::get('/a', [TaoBang::class,'createTable']);
+Route::get('/trangchu/slide', [PageController::class,'getIndex']);
+Route::get('/trangchu/product', [PageController::class,'getProduct']);

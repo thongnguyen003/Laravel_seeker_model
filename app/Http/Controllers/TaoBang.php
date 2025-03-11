@@ -176,7 +176,8 @@ class TaoBang extends Controller
                 $table->text('video')->nullable();
                 $table->string('week', 255)->nullable();
                 $table->text('extras')->nullable();
-                $table->timestamps();
+                $table->timestamp('created_at')->nullable(); 
+                $table->timestamp('updated_at')->nullable(); 
                 $table->longText('base64_image')->nullable();
             });
         }
@@ -205,7 +206,8 @@ class TaoBang extends Controller
                 $table->increments('id'); // Tạo cột 'id' tự động auto-increment và là khóa chính
                 $table->unsignedInteger('monster_id'); // Tạo cột 'monster_id' kiểu unsigned integer
                 $table->unsignedInteger('tag_id'); // Tạo cột 'tag_id' kiểu unsigned integer
-                $table->timestamps(); // Tạo các cột 'created_at', 'updated_at'
+                $table->timestamp('created_at')->nullable(); 
+                $table->timestamp('updated_at')->nullable(); 
                 $table->softDeletes();
             });
         }
