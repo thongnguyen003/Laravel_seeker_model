@@ -20,16 +20,6 @@
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->    
-    <link href='http://fonts.googleapis.com/css?family=Dosis:300,400' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="{{ asset('source/assets/dest/css/font-awesome.min.css')}}">
-	<link rel="stylesheet" href="{{ asset('source/assets/dest/vendors/colorbox/example3/colorbox.css')}}">
-	<link rel="stylesheet" href="{{ asset('source/assets/dest/rs-plugin/css/settings.css')}}">
-	<link rel="stylesheet" href="{{ asset('source/assets/dest/rs-plugin/css/responsive.css')}}">
-	<link rel="stylesheet" title="{{ asset('source/style" href="assets/dest/css/style.css')}}">
-	<link rel="stylesheet" href="{{ asset('source/assets/dest/css/animate.css')}}">
-	<link rel="stylesheet" title="style" href="{{ asset('source/assets/dest/css/huong-style.css')}}">
 <!-- -->
     <link rel="shortcut icon" href="{{ asset('eshopper/images/ico/favicon.ico') }}">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('eshopper/images/ico/apple-touch-icon-144-precomposed.png') }}">
@@ -39,7 +29,13 @@
 </head><!--/head-->
 
 <body>
+	<style>
+		html,body, .rev-slider .fullwidthbanner-container, .fullwidthbanner, .annercontainer, .banner, .banner ul{
+			width: 100% !important;
+			height:100% !important;
 
+		}
+	</style>
 	<!-- header -->
 	 @include('Component.header')
 	<!-- slider -->

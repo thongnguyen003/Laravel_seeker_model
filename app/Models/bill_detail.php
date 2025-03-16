@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class bill_detail extends Model
 {
-    protected $table = "bill-detail";
+    protected $table = "bill_details";
     public function product() : hasMany {
         return $this->hasMany(product::class,'id_product');
     }

@@ -25,7 +25,7 @@
                             <div class="col-sm-3">
                                 <div class="single-item">
                                     <div class="single-item-header">
-                                        <a href="detail/{{$new->id}}">
+                                        <a href="/detail/{{$new->id}}">
                                             <img width="200" height="200" src="/source/image/product/{{$new->image}}" alt="">
                                         </a>
                                     </div>
@@ -52,7 +52,7 @@
                                         <a class="add-to-wishlist" href="wishlist/add/{{$new->id}}">
                                             <i class="fa fa-heart"></i>
                                         </a>
-                                        <a class="beta-btn primary" href="detail/{{$new->id}}">Details <i class="fa fa-chevron-right"></i></a>
+                                        <a class="beta-btn primary" href="/detail/{{$new->id}}">Details <i class="fa fa-chevron-right"></i></a>
                                         <div class="clearfix"></div>
                                     </div>
                                 </div>
@@ -98,7 +98,7 @@
                                         <a class="add-to-wishlist" href="wishlist/add/{{$km->id}}">
                                             <i class="fa fa-heart"></i>
                                         </a>
-                                        <a class="beta-btn primary" href="detail/{{$km->id}}">Details <i class="fa fa-chevron-right"></i></a>
+                                        <a class="beta-btn primary" href="/detail/{{$km->id}}">Details <i class="fa fa-chevron-right"></i></a>
                                         <div class="clearfix"></div>
                                     </div>
                                 </div>
