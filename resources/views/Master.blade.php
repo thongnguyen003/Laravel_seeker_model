@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="{{ asset('source/assets/dest/css/animate.css') }}">
 	<link rel="stylesheet" title="style" href="{{ asset('source/assets/dest/css/huong-style.css') }}">
     <link rel="stylesheet" href="{{ asset('source/assets/dest/css/style.css') }}">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -29,13 +30,6 @@
 </head><!--/head-->
 
 <body>
-	<style>
-		html,body, .rev-slider .fullwidthbanner-container, .fullwidthbanner, .annercontainer, .banner, .banner ul{
-			width: 100% !important;
-			height:100% !important;
-
-		}
-	</style>
 	<!-- header -->
 	 @include('Component.header')
 	<!-- slider -->
@@ -47,11 +41,31 @@
 	
 
   <!-- ///  -->
-    <script src="{{ asset('eshopper/js/jquery.js') }}"></script>
-	<script src="{{ asset('eshopper/js/bootstrap.min.js') }}"></script>
-	<script src="{{ asset('eshopper/js/jquery.scrollUp.min.js') }}"></script>
-	<script src="{{ asset('eshopper/js/price-range.js') }}"></script>
-    <script src="{{ asset('eshopper/js/jquery.prettyPhoto.js') }}"></script>
-    <script src="{{ asset('eshopper/images/ico/favicon.ico') }}js/jquery.prettyPhoto.js"></script>
+  <script src="{{ asset('source/assets/dest/js/jquery.js') }}"></script>
+	<script src="{{ asset('source/assets/dest/vendors/jqueryui/jquery-ui-1.10.4.custom.min.js') }}"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<script src="{{ asset('source/assets/dest/vendors/bxslider/jquery.bxslider.min.js') }}"></script>
+	<script src="{{ asset('source/assets/dest/vendors/colorbox/jquery.colorbox-min.js') }}"></script>
+	<script src="{{ asset('source/assets/dest/vendors/animo/Animo.js') }}"></script>
+	<script src="{{ asset('source/assets/dest/vendors/dug/dug.js') }}"></script>
+	<script src="{{ asset('source/assets/dest/js/scripts.min.js') }}"></script>
+	<script src="{{ asset('source/assets/dest/rs-plugin/js/jquery.themepunch.tools.min.js') }}"></script>
+	<script src="{{ asset('source/assets/dest/rs-plugin/js/jquery.themepunch.revolution.min.js') }}"></script>
+	<script src="{{ asset('source/assets/dest/js/waypoints.min.js') }}"></script>
+	<script src="{{ asset('source/assets/dest/js/wow.min.js') }}"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<!--customjs-->
+	<script src="{{ asset('source/assets/dest/js/custom2.js') }}"></script>
+	<script>
+	$(document).ready(function($) {    
+		$(window).scroll(function(){
+			if($(this).scrollTop()>150){
+			$(".header-bottom").addClass('fixNav')
+			}else{
+				$(".header-bottom").removeClass('fixNav')
+			}}
+		)
+	})
+	</script>
 </body>
 </html>
